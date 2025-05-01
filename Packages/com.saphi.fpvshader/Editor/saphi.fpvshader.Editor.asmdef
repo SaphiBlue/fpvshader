@@ -1,0 +1,16 @@
+{
+    "name": "saphi.fpv.Editor",
+    "rootNamespace": "",
+    "references": [
+        "saphi.fpv"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

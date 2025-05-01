@@ -1,0 +1,12 @@
+{
+  "name": "com.saphi.fpvshader",
+  "displayName": "Saphi FPV Shader",
+  "version": "0.0.1",
+  "unity": "2022.3",
+  "description": "First person view shader",
+  "vrchatVersion": "2022.1.1",
+  "author": {
+    "name": "Saphi",
+    "url": "https://github.com/SaphiBlue/"
+  }
+}
