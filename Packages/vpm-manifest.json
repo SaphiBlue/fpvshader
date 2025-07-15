@@ -1,1 +1,19 @@
-{"dependencies": {}, "locked": {}}
+{
+  "dependencies": {
+    "com.saphi.quantumshader": {
+      "version": "0.0.18"
+    }
+  },
+  "locked": {
+    "com.saphi.quantumshader": {
+      "version": "0.0.18",
+      "dependencies": {
+        "com.llealloo.audiolink": "2.x.x"
+      }
+    },
+    "com.llealloo.audiolink": {
+      "version": "2.1.0",
+      "dependencies": {}
+    }
+  }
+}

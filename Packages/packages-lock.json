@@ -1,7 +1,19 @@
 {
   "dependencies": {
+    "com.llealloo.audiolink": {
+      "version": "file:com.llealloo.audiolink",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.saphi.fpvshader": {
       "version": "file:com.saphi.fpvshader",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.saphi.quantumshader": {
+      "version": "file:com.saphi.quantumshader",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}

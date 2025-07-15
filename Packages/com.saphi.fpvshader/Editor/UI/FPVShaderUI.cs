@@ -81,29 +81,29 @@ namespace Saphi.FPVShader
                 target.SetFloat(toggle, 1);
 
                 GUILayout.BeginVertical("box");
-                EditorGUI.indentLevel += 2;
+                EditorGUI.indentLevel += 1;
 
 
-                editor.ShaderProperty(getProperty("_UseHDR"), "Use HDR Color", 2);
+                editor.ShaderProperty(getProperty("_UseHDR"), "Use HDR Color");
                 if (target.GetFloat("_UseHDR") == 1){
-                    editor.ShaderProperty(getProperty("_ColorHDR"), "Color HDR", 2);
+                    editor.ShaderProperty(getProperty("_ColorHDR"), "Color HDR");
                 }else{
-                    editor.ShaderProperty(getProperty("_Color"), "Color", 2);
+                    editor.ShaderProperty(getProperty("_Color"), "Color");
                 }
 
-                editor.ShaderProperty(getProperty("_HueShift"), "HueShift", 2);
-                editor.ShaderProperty(getProperty("_Saturation"), "Saturation", 2);
-                editor.ShaderProperty(getProperty("_Value"), "Value", 2);
+                editor.ShaderProperty(getProperty("_HueShift"), "HueShift");
+                editor.ShaderProperty(getProperty("_Saturation"), "Saturation");
+                editor.ShaderProperty(getProperty("_Value"), "Value");
                 
                 GUILayout.Space(10);
 
-                editor.ShaderProperty(getProperty("_ColorMultiplier"), "Color Multiplier", 2);
-                editor.ShaderProperty(getProperty("_Visibility"), "Visibility", 2);
+                editor.ShaderProperty(getProperty("_ColorMultiplier"), "Color Multiplier");
+                editor.ShaderProperty(getProperty("_Visibility"), "Visibility");
 
 
                 GUILayout.Space(10);
 
-                EditorGUI.indentLevel -= 2;
+                EditorGUI.indentLevel -= 1;
                 GUILayout.EndVertical();
 
 
@@ -134,10 +134,10 @@ namespace Saphi.FPVShader
             if (showRendering)
             {
                 target.SetFloat(toggle, 1);
-                EditorGUI.indentLevel += 2;
+                EditorGUI.indentLevel += 1;
                 GUILayout.Space(10);
                 editor.RenderQueueField();
-                EditorGUI.indentLevel -= 2;
+                EditorGUI.indentLevel -= 1;
             }
             else
             {
