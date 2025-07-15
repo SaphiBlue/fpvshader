@@ -100,6 +100,7 @@ namespace Saphi.FPVShader
                 editor.ShaderProperty(getProperty("_Color"), "Color");
                 editor.ShaderProperty(getProperty("_SpecColor"), "Specular Color");
                 editor.ShaderProperty(getProperty("_EmissionColor"), "Emission Color");
+                editor.ShaderProperty(getProperty("_Emission"), "Emission");
                 editor.ShaderProperty(getProperty("_Glossiness"), "Smoothness");
                 editor.ShaderProperty(getProperty("_Alpha"), "Alpha");
 
