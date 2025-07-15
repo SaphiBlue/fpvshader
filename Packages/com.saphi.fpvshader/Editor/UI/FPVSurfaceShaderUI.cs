@@ -38,7 +38,6 @@ namespace Saphi.FPVShader
             GUILayout.Space(10);
 
             MainProps();
-            RefractionProps();
             Rendering();
         }
 
@@ -129,49 +128,6 @@ namespace Saphi.FPVShader
                 target.SetFloat(toggle, 0);
             }
         }
-
-        void RefractionProps()
-        {
-            bool showRefraction;
-            string toggle = "_ShowRefraction";
-
-            if (target.GetFloat(toggle) == 1)
-            {
-                showRefraction = true;
-            }
-            else
-            {
-                showRefraction = false;
-            }
-
-            showRefraction = EditorGUILayout.Foldout(showRefraction, "Refraction", true, EditorStyles.foldoutHeader);
-            if (showRefraction)
-            {
-                target.SetFloat(toggle, 1);
-
-                GUILayout.BeginVertical("box");
-                EditorGUI.indentLevel += 1;
-
-
-                
-                editor.ShaderProperty(getProperty("_Refraction"), "Refraction");
-                editor.ShaderProperty(getProperty("_ChromaticAberration"), "ChromaticAberration");
-
-
-                GUILayout.Space(10);
-
-                EditorGUI.indentLevel -= 1;
-                GUILayout.EndVertical();
-
-
-
-            }
-            else
-            {
-                target.SetFloat(toggle, 0);
-            }
-        }
-
         void TransparencyMode()
         {
             TransparencyBlendMode mode = (TransparencyBlendMode)target.GetFloat("_BlendMode");
